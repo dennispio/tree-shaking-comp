@@ -32,7 +32,7 @@ const StyledButton = styled.button<ButtonProps>`
     }
 `;
 
-const Button: FC<ButtonProps> = ({size, primary, disabled, text, onClick, ...props}) => {
+export const Button: FC<ButtonProps> = ({size, primary, disabled, text, onClick, ...props}) => {
     return (
         <StyledButton type="button" onClick={onClick} primary={primary} disabled={disabled} size={size} {...props}>
             {text}
@@ -40,4 +40,3 @@ const Button: FC<ButtonProps> = ({size, primary, disabled, text, onClick, ...pro
     )
 }
 
-export default Button;
