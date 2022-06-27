@@ -24,7 +24,7 @@ const config = defineConfig([
     input: ['src/index.ts'],
     output: {
       dir: 'dist/esm',
-      format: "esm",
+      format: "es",
       preserveModules: true,
       preserveModulesRoot: 'src',
       sourcemap: false,
