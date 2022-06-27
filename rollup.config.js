@@ -35,19 +35,6 @@ const config = defineConfig([
     ],
     external: ["react", "react-dom", "styled-components"]
   },
-  // CJS config
-  {
-    input: ['src/index.ts'],
-    output: {
-      dir: 'dist/cjs',
-      format: "cjs",
-    },
-    plugins: [
-      typescript({ outDir: 'dist/cjs', declaration: false, sourceMap: false }),
-      terser(),
-    ],
-    external: ["react", "react-dom", "styled-components"]
-  },
 ]);
 
 export default config;

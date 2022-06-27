@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
-import Input, {InputProps}  from '../components/Input/Input';
+import  {Input,InputProps}  from '../components/Input';
 
 export default {
   title: 'Marbella/Input',
