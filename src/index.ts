@@ -1,3 +1,3 @@
-export * as Button from "./components/Button"
-export * as Input  from"./components/Input"
-export * as Test  from"./components/Test"
+export * from "./components/Button"
+export * from"./components/Input"
+export * from"./components/Test"
