@@ -4,16 +4,16 @@ import typescript from '@rollup/plugin-typescript';
 import { terser } from 'rollup-plugin-terser';
 
 const config = defineConfig([
-  // types config
+  // CJS config
   {
     input: ['src/index.ts'],
     output: {
-      dir: 'dist',
+      dir: 'dist/cjs',
       format: 'cjs',
       sourcemap: false,
     },
     plugins: [
-      typescript({ declarationDir: 'dist/types', sourceMap: false }),
+      typescript({ declarationDir: 'dist/cjs', sourceMap: false }),
       terser(),
     ],
     external: ["react", "react-dom", "styled-components"]
