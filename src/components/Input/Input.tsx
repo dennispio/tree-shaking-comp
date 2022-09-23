@@ -44,8 +44,8 @@ const StyledText = styled.p<InputProps>`
 export const Input: FC<InputProps> = ({id, disabled, label, message, error, success, onChange, placeholder, ...props}) => {
     return (
       <Fragment>
-        <StyledLabel><StyledText disabled={disabled} error={error}>{label}</StyledText></StyledLabel>
         <StyledInput id={id} type="text" onChange={onChange} disabled={disabled} error={error} success={success} placeholder={placeholder} {...props}></StyledInput>
+        <StyledLabel><StyledText disabled={disabled} error={error}>{label}</StyledText></StyledLabel>
         <StyledMessage><StyledText error={error}>{message}</StyledText></StyledMessage>
       </Fragment>
     )
