@@ -37,8 +37,8 @@ const StyledMessage = styled.div<InputProps>`
 `;
 
 const StyledText = styled.p<InputProps>`
-   margin: 0px;
-   color: ${props => props.disabled ? "#e4e3ea" : (props.error ? "#a9150b": "#080808")};
+  color: ${props => props.disabled ? "#e4e3ea" : (props.error ? "#a9150b": "#080808")};
+  margin: 0px;
 `;
 
 export const Input: FC<InputProps> = ({id, disabled, label, message, error, success, onChange, placeholder, ...props}) => {
