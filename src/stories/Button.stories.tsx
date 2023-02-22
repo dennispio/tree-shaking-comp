@@ -28,8 +28,8 @@ Secondary.args = {
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  primary: false,
   disabled: true,
+  primary: false,
   text: 'Disabled',
 };
 
