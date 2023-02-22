@@ -21,8 +21,8 @@ Primary.args = {
 export const Success = Template.bind({});
 Success.args = {
   error: false,
-  success:true,
   disabled: false,
+  success:true,
   label: "Success",
 };
 
