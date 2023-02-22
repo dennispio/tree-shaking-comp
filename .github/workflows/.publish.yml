@@ -1,7 +1,7 @@
 name: Create and publish a package
 on:
   push:
-    branches: ['main', 'demo', 'aplha', 'beta']
+    branches: ['main', 'demo', 'aplha', 'beta', "next"]
 jobs:
 
   release:
