@@ -2,9 +2,7 @@
   "name": "@dennispio/test-tree-shaking",
   "version": "3.0.3",
   "description": "",
-  "type": "module",
   "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "exports": {
     ".": {
@@ -22,6 +20,7 @@
     "storybook": "start-storybook -p 6006",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-storybook": "build-storybook",
+    "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" \"yarn build-storybook && npx http-server storybook-static --port 6006 \" \"npx wait-on tcp:6006 && yarn test-storybook\"",
     "build": "rollup -c"
   },
   "author": "",
@@ -37,10 +36,12 @@
     "@storybook/builder-webpack4": "^6.5.9",
     "@storybook/manager-webpack4": "^6.5.9",
     "@storybook/react": "^6.5.9",
+    "@storybook/test-runner": "^0.9.4",
     "@storybook/testing-library": "0.0.13",
     "@types/react": "^18.0.14",
     "@types/styled-components": "^5.1.25",
     "babel-loader": "^8.2.5",
+    "concurrently": "^7.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^2.75.7",
