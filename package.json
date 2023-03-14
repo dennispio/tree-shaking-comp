@@ -51,7 +51,10 @@
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
