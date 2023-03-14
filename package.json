@@ -20,7 +20,7 @@
     "storybook": "start-storybook -p 6006",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-storybook": "build-storybook",
-    "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" \"yarn build-storybook && npx http-server storybook-static --port 6006 \" \"npx wait-on tcp:6006 && echo hello world\"",
+    "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" \"yarn build-storybook && npx http-server storybook-static --port 6006 \" \"npx wait-on http://localhost:6006/ && echo hello world\"",
     "build": "rollup -c"
   },
   "author": "",
