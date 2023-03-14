@@ -45,8 +45,6 @@ jobs:
         env:
           CI: true
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-      - name: Build Storybook
-        run: npm run story:build
       - name: Install Playwright
         run: npx playwright install --with-deps
       - name: Serve Storybook and run tests
